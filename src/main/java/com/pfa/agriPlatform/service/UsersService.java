@@ -21,9 +21,9 @@ public class UsersService {
     public User addUser(User user){return ur.saveAndFlush(user);}
     public boolean existsById(Long id){return ur.existsById(id);}
     public void deleteUser(Long id){ur.deleteById(id);}
-    public void updateUser(Long id, String username,String description, String email, String fName, String lName, String password, String address, String city, String country, int code)
+    public void updateUser(Long id, String username,String description, String email, String fName, String lName, String password, String address, String city, String country, int code,String fb, String insta, String linkedin)
     {
-        ur.updateUser(id, username,description, email, fName, lName, password, address, city, country,code);
+        ur.updateUser(id, username,description, email, fName, lName, password, address, city, country,code,fb,insta,linkedin);
     }
 
 

@@ -31,4 +31,5 @@ public class ClientsService {
     {
         cr.updateClient(id, name, email, city, address, irrigated, noirrigated, total, homogenous, heterogenous, clay, silt, sand, limestone, gypsum, maps);
     }
+    public List<String> getAllClientNames(){return cr.findAllClientNames();}
 }

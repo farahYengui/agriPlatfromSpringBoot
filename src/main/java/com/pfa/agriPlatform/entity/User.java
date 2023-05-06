@@ -27,6 +27,9 @@ public class User {
     private String city;
     private String country;
     private int code;
+    private String fb;
+    private String insta;
+    private String linkedin;
 
 
 }

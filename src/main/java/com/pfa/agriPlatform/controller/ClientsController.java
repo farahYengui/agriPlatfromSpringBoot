@@ -56,7 +56,7 @@ public class ClientsController {
             cs.deleteClient(name);
             HashMap<String,String> message = new HashMap<>();
             message.put("message", "Client named " + name + " deleted successfully");
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
+            return ResponseEntity.ok().body(message);
         }
         else {
             HashMap<String,String> message = new HashMap<>();
@@ -65,4 +65,9 @@ public class ClientsController {
         }
 
     }
+    @GetMapping("/clients/names")
+    public List<String> getAllClientNames() {
+        return cs.getAllClientNames();
+    }
+
 }

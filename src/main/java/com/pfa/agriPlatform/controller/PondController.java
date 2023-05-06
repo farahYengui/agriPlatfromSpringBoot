@@ -60,7 +60,7 @@ public class PondController {
             ps.deletePond(idClient);
             HashMap<String, String> message = new HashMap<>();
             message.put("message", "Client with id " + idClient + "deleted successfully");
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
+            return ResponseEntity.ok().body(message);
         } else {
             HashMap<String, String> message = new HashMap<>();
             message.put("message", idClient + " client not found or matched");

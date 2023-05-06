@@ -45,6 +45,9 @@ public class UsersController {
             u1.setCountry(user.getCountry());
             u1.setCity(user.getCity());
             u1.setCode(user.getCode());
+            u1.setFb(user.getFb());
+            u1.setInsta(user.getInsta());
+            u1.setLinkedin(user.getLinkedin());
             us.addUser(u1);
             return ResponseEntity.ok().body(u1);
         }
